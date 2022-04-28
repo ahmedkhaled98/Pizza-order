@@ -1,14 +1,12 @@
 import Image from "next/image";
 import 'bootstrap/dist/css/bootstrap.css'
 import styles from "../styles/Navbar.module.css";
-import { useState } from "react";
 import { useSelector } from "react-redux";
 import Link from "next/link";
 import { useSession, signOut } from "next-auth/client";
 
 const Navbar = () => {
-  // const [isNavCollapsed, setIsNavCollapsed] = useState(true);
-  // const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+ 
   const quantity = useSelector((state) => state.cart.quantity);
   const [session, loading] = useSession()
 
@@ -87,9 +85,9 @@ const Navbar = () => {
       </ul>
     </div>
          <div className="mx-auto order-0">
-            <a class="navbar-brand mx-auto" href="#"><img src="/img/logo.png" alt="" width="160px" height="69px" /></a>
+            <a className="navbar-brand mx-auto" href="#"><img src="/img/logo.png" alt="" width="160px" height="69px" /></a>
             <button className="navbar-toggler" style={{'color':'white'}} type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
          </div>
 
