@@ -6,9 +6,9 @@ import { useSelector } from "react-redux";
 import Link from "next/link";
 import { useSession, signOut } from "next-auth/client";
 
-const Navbar = ({order}) => {
-  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
-  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+const Navbar = () => {
+  // const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+  // const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   const quantity = useSelector((state) => state.cart.quantity);
   const [session, loading] = useSession()
 
@@ -16,7 +16,7 @@ const Navbar = ({order}) => {
    
     <nav className="navbar navbar-expand-md navbar-light" style={{'backgroundColor':'#d1411e'}}>
     <div className="container-fluid">
-      <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" class={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarNav">
+      <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"  id="navbarNav">
         <ul className="navbar-nav me-auto" style={{'color':'white'}}>
               <li className="nav-item  px-2">
            <Link href="/" className="nav-link" passHref>
@@ -34,12 +34,12 @@ const Navbar = ({order}) => {
       </div>
            <div className="mx-auto order-0">
               <a className="navbar-brand mx-auto" href="#"><img src="/img/logo.png" alt="" width="160px" height="69px" /></a>
-              <button className="navbar-toggler" style={{'color':'white'}} type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded={!isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={handleNavCollapse}>
+              <button className="navbar-toggler" style={{'color':'white'}} type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
                 <span className="navbar-toggler-icon"></span>
               </button>
            </div>
   
-           <div  className="collapse navbar-collapse w-100 order-3 dual-collapse2" class={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarNav">
+           <div  className="collapse navbar-collapse w-100 order-3 dual-collapse2"  id="navbarNav">
               <ul className="navbar-nav ms-auto px-2">
               <li className="nav-item mt-3 px-3">
               <Link href="/cart" className="nav-link" passHref>
@@ -69,7 +69,7 @@ const Navbar = ({order}) => {
    
 <nav className="navbar navbar-expand-md navbar-light" style={{'backgroundColor':'#d1411e'}}>
   <div className="container-fluid">
-    <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" class={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarNav">
+    <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"  id="navbarNav">
       <ul className="navbar-nav me-auto" style={{'color':'white'}}>
             <li className="nav-item  px-2">
          <Link href="/" className="nav-link" passHref>
@@ -88,12 +88,12 @@ const Navbar = ({order}) => {
     </div>
          <div className="mx-auto order-0">
             <a class="navbar-brand mx-auto" href="#"><img src="/img/logo.png" alt="" width="160px" height="69px" /></a>
-            <button className="navbar-toggler" style={{'color':'white'}} type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded={!isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={handleNavCollapse}>
+            <button className="navbar-toggler" style={{'color':'white'}} type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
               <span class="navbar-toggler-icon"></span>
             </button>
          </div>
 
-         <div  className="collapse navbar-collapse w-100 order-3 dual-collapse2" class={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarNav">
+         <div  className="collapse navbar-collapse w-100 order-3 dual-collapse2"  id="navbarNav">
             <ul className="navbar-nav ms-auto px-2">
             <li className="nav-item mt-3 px-3">
             <Link href="/cart" className="nav-link" passHref>
