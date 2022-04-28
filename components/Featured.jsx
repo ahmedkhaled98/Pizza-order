@@ -12,8 +12,8 @@ const Featured = () => {
     <div className={styles.container}>
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   
-  <div class="carousel-inner">
-    <div class="carousel-item active">
+  <div className="carousel-inner">
+    <div className="carousel-item active">
     <div className='container px-5'>
   <div className='row'>
     <div className='col-lg-6 my-auto'>
@@ -28,7 +28,7 @@ const Featured = () => {
   </div>
 </div>
     </div>
-    <div class="carousel-item">
+    <div className="carousel-item">
     <div className="container px-5">
   <div className="row mt-3">
     <div className="col-lg-6 my-auto text-center">
@@ -44,13 +44,13 @@ const Featured = () => {
 </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
   <img className="d-block w-75 ml-5" src="/img/arrowl.png" alt="First slide" />
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
   <img className="d-block w-75 ml-5" src="/img/arrowr.png" alt="First slide" />
-    <span class="visually-hidden">Next</span>
+    <span className="visually-hidden">Next</span>
   </button>
 </div>
 

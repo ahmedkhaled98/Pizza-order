@@ -77,8 +77,8 @@ const handleClick = () => {
          
      <div className="row mt-4">
        {pizza.extraOptions.map(option=>( 
-       <div className="col-lg-4">
-       <div className={styles.option} key={option._id}>
+       <div className="col-lg-4" key={option._id}>
+       <div className={styles.option} >
       <input
         className={styles.checkbox}
         type="checkbox"

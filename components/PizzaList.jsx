@@ -18,7 +18,7 @@ const PizzaList = ({pizzaList}) => {
       <div className="container">
         <div className="row justify-content-center">
           {pizzaList.map((pizza)=>(
-            <div className="col-lg-3 col-md-6 col-sm-12 my-3"><PizzaCard key={pizza._id} pizza={pizza}/></div>
+            <div className="col-lg-3 col-md-6 col-sm-12 my-3" key={pizza._id}><PizzaCard  pizza={pizza}/></div>
           ))}
           
           
