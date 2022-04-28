@@ -1,0 +1,59 @@
+
+.cart{
+  position: relative;
+}
+
+.counter{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #d1411e;
+} 
+.item {
+  cursor: pointer;
+}
+
+.btn{
+  background-color: aliceblue;
+  border:2px solid #d1411e;
+  color: #d1411e;
+  border-radius: 8px;
+  padding-bottom: 9%;
+  padding-top: 9%;
+}
+.btn:hover{
+  background-color: #d1411e;
+  color: aliceblue;
+}
+@media screen and (max-width:480px) {
+  .cart{
+    position: relative;
+  }
+  .counter{
+    position: absolute;
+    top: 200px;
+    right: 650px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #d1411e;
+  } 
+  .item {
+    cursor: pointer;
+  }
+}  

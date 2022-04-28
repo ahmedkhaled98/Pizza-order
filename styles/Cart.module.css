@@ -1,0 +1,21 @@
+
+.btn{
+  margin-top: 3%;
+  background-color: aliceblue;
+  border:2px solid #d1411e;
+  color: #d1411e;
+  border-radius: 8px;
+  padding: 2%;
+}
+.btn:hover{
+  background-color: #d1411e;
+  color: aliceblue;
+}
+.payButton {
+  padding: 10px 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  background-color: white;
+  color: teal;
+  font-weight: bold;
+}
