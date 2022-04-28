@@ -10,7 +10,7 @@ const Featured = () => {
     
   return (
     <div className={styles.container}>
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
   
   <div className="carousel-inner">
     <div className="carousel-item active">
@@ -46,7 +46,7 @@ const Featured = () => {
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
   <img className="d-block w-75 ml-5" src="/img/arrowl.png" alt="First slide" />
-    <span class="visually-hidden">Previous</span>
+    <span className="visually-hidden">Previous</span>
   </button>
   <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
   <img className="d-block w-75 ml-5" src="/img/arrowr.png" alt="First slide" />
