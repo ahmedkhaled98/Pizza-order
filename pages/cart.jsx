@@ -53,7 +53,7 @@ const Cart = () => {
                   src={product.img}
                   className="w-75 py-3 border-0"
                   alt=""
-                  
+            
                 />
               </div>
             </td>

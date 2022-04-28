@@ -74,7 +74,7 @@ const handleClick = () => {
          </div>
          <h3 >Choose additional ingredients</h3>
     <div className="container mt-2">
-         
+        
      <div className="row mt-4">
        {pizza.extraOptions.map(option=>( 
        <div className="col-lg-4" key={option._id}>

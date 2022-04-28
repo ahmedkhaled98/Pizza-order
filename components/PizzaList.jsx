@@ -21,7 +21,6 @@ const PizzaList = ({pizzaList}) => {
             <div className="col-lg-3 col-md-6 col-sm-12 my-3" key={pizza._id}><PizzaCard  pizza={pizza}/></div>
           ))}
           
-          
         </div>
       </div>
     </div>
